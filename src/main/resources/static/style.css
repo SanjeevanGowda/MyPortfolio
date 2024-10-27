@@ -1,0 +1,371 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    background: radial-gradient(circle at 70% 30%, #e9effd, #fff);
+}
+
+.intro-text {
+    max-width: 50%;
+}
+
+.intro-text p {
+    font-size: 16px;
+    color: #666;
+}
+
+.intro-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #333;
+}
+
+.intro-text h2 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Photo Section */
+.intro-photo img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .intro-photo img {
+        width: 250px;
+        height: 250px;
+    }
+}
+/* the below is for contact  */
+/* Overall container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contact info on the left */
+.contact-info {
+    max-width: 300px;
+    margin-right: 50px;
+}
+
+.contact-info h3 {
+    font-size: 1.3em;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* Contact form on the right */
+.contact-form {
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Form elements */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #6c63ff;
+    outline: none;
+    background-color: #fff;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* Submit button */
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #574b90;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: none;
+    }
+}
+/*  below if for about me section*/
+
+/* Header Styles */
+
+
+/* Main container styling */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Left side: Image */
+.about-image {
+    max-width: 40%;
+    margin-right: 50px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side: Info */
+.about-info {
+    max-width: 55%;
+}
+
+.about-info h1 {
+    font-size: 2.5em;
+    color: #6c63ff;
+    margin-bottom: 20px;
+}
+
+.about-info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.about-info h2 {
+    font-size: 1.8em;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+.about-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-info ul li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #6c63ff;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        margin-right: 0;
+        margin-bottom: 30px;
+        max-width: 80%;
+    }
+
+    .about-info {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+/* this is for experience */
+.experience-container {
+    padding: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+.experience-container h1 {
+    font-size: 2.5em;
+    color: #6c63ff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.experience-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h2 {
+    font-size: 1.8em;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+.experience-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.experience-item span {
+    font-size: 1em;
+    color: #999;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #6c63ff;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .experience-container {
+        padding: 20px;
+    }
+
+    .experience-item {
+        padding: 15px;
+    }
+}
+
