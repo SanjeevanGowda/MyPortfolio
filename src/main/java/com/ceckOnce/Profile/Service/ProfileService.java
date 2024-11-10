@@ -19,17 +19,7 @@ public class ProfileService {
 	public void saveContact(ProfileModel contact) {
 		profilerepository.save(contact);
     }
-	
-	// Optional: Method to retrieve all contact submissions
-//    public List<ProfileModel> getAllContacts() {
-//        return profilerepository.findAll();
-//    }
-    
- // Optional: Method to retrieve a specific contact submission by ID
-//    public ProfileModel getContactById(Long id) {
-//        return profilerepository.findById(id).orElse(null);
-//    }
-	// Handle user registration
+
     public void saveRegister(ProfileModel registercontact) {
     	profilerepository.save(registercontact);
     }
